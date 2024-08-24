@@ -4,7 +4,7 @@ import { menuItems } from './data/db';
 import useOrder from './hooks/useOrder';
 
 function App() {
-  const { order, addItem } = useOrder();
+  const { order, addItem, removeItem } = useOrder();
   return (
     <>
       <header className="bg-teal-400 py-5">
@@ -25,7 +25,7 @@ function App() {
         <section className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
           <h2 className="font-black text-4xl">Consumo</h2>
 
-          <OrderContents order={order} />
+          <OrderContents order={order} removeItem={removeItem} />
         </section>
       </main>
     </>
