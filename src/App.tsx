@@ -27,7 +27,7 @@ function App() {
           <h2 className="font-black text-4xl">Consumo</h2>
 
           <OrderContents order={order} removeItem={removeItem} />
-          <OrderTotals />
+          <OrderTotals order={order} />
         </section>
       </main>
     </>
