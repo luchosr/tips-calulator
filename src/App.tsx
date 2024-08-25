@@ -1,5 +1,6 @@
 import MenuItem from './components/MenuItem';
 import OrderContents from './components/OrderContents';
+import OrderTotals from './components/OrderTotals';
 import { menuItems } from './data/db';
 import useOrder from './hooks/useOrder';
 
@@ -26,6 +27,7 @@ function App() {
           <h2 className="font-black text-4xl">Consumo</h2>
 
           <OrderContents order={order} removeItem={removeItem} />
+          <OrderTotals />
         </section>
       </main>
     </>
