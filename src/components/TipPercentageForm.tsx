@@ -18,23 +18,28 @@ const tipOptions = [
 
 type TipPercentageFormProps = {
   setTip: React.Dispatch<React.SetStateAction<number>>;
+  tip: number;
 };
 
-export default function TipPercentageForm({ setTip }: TipPercentageFormProps) {
+export default function TipPercentageForm({
+  setTip,
+  tip,
+}: TipPercentageFormProps) {
   return (
     <div>
       <h3 className="font-black text-2xl">Propina:</h3>
       <form action="">
-        {tipOptions.map((tip) => (
-          <div key={tip.id} className="flex- gap-2">
-            <label htmlFor={tip.id}>{tip.label}</label>
+        {tipOptions.map((tipOption) => (
+          <div key={tipOption.id} className="flex- gap-2">
+            <label htmlFor={tipOption.id}>{tipOption.label}</label>
             <input
               type="radio"
               name="tip"
-              value={tip.value}
-              id={tip.id}
+              value={tipOption.value}
+              id={tipOption.id}
               // IMP! fijate que se castea desde string a number con el + antes del dato.
               onChange={(e) => setTip(+e.target.value)}
+              checked={tipOption.value === tip}
             />
           </div>
         ))}
