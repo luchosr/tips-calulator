@@ -39,4 +39,28 @@ export const orderReducer = (
       order,
     };
   }
+
+  if (action.type === 'remove-item') {
+    const order = state.order.filter((item) => item.id !== action.payload.id);
+    return {
+      ...state,
+      order,
+    };
+  }
+
+  if (action.type === 'add-tip') {
+    const tip = action.payload.value;
+    return {
+      ...state,
+      tip,
+    };
+  }
+
+  if (action.type === 'place-order') {
+    return {
+      ...state,
+      order: [],
+      tip: 0,
+    };
+  }
 };
