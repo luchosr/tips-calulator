@@ -1,50 +1,15 @@
-# React + TypeScript + Vite
+# Tips and Bill Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description and Motivation
 
-Currently, two official plugins are available:
+- This project allows you to calculate the bill amount of your order and tip percentage. It was created to practice TypeScript and improve my coding skills using React.js, the Context API, and TailwindCSS. You can select the different options in the menu and then calculate the tip amount to pay.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- I used React.js for its simplicity and component-oriented capabilities with TypeScript to avoid type-related errors at compile time and ship safe code, and TailwindCSS to apply styles because it's a very fast way to apply styles in your code.
 
-## Expanding the ESLint configuration
+## How to Install and Run the Project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- You can clone the repo, make a cd into the project folder and then run `pnpm install` for installing the dependencies, then you can run `pnpm dev` and the project will start on development mode.
 
-- Configure the top-level `parserOptions` property like this:
+- If you want, you can access a project's deployment [here.](https://tips-calulator-1eyx.vercel.app/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Tips Calculator main image](./public/img/Tips%20Calculator.png 'Tips Calculator main image')
