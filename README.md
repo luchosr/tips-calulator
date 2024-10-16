@@ -12,4 +12,4 @@
 
 - If you want, you can access a project's deployment [here.](https://tips-calulator-1eyx.vercel.app/ target="_blank")
 
-![Tips Calculator main image](./public/img/Tips%20Calculator.png 'Tips Calculator main image'")
+![Tips Calculator main image](./public/img/Tips%20Calculator.png 'Tips Calculator main image')
