@@ -10,6 +10,6 @@
 
 - You can clone the repo, make a cd into the project folder and then run `pnpm install` for installing the dependencies, then you can run `pnpm dev` and the project will start on development mode.
 
-- If you want, you can access a project's deployment [here.](https://tips-calulator-1eyx.vercel.app/){:target="_blank"} 
+- If you want, you can access a project's deployment [here.](https://tips-calulator-1eyx.vercel.app/)
 
 ![Tips Calculator main image](./public/img/Tips%20Calculator.png 'Tips Calculator main image')
